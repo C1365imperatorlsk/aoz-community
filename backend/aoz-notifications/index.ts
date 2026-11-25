@@ -18,7 +18,7 @@ async function identity(raw:unknown,token:string){
  try{const u=JSON.parse(q.get("user")||"null");return Number.isSafeInteger(u?.id)&&u.id>0?String(u.id):null}catch{return null}
 }
 
-const langs=["ru","en","es","vi","ar","zh","hr"];
+const langs=["ru","en","es","vi","ar","zh","hr","it"];
 const msg:Record<string,string[]>={
 ru:["🎁 Новый подарочный промокод!","Версия игры:","Активируйте код в игре.","Копировать код","Настройки уведомлений"],
 en:["🎁 New gift code!","Game version:","Redeem the code in the game.","Copy code","Notification settings"],
@@ -26,7 +26,8 @@ es:["🎁 ¡Nuevo código de regalo!","Versión del juego:","Canjea el código e
 vi:["🎁 Mã quà tặng mới!","Phiên bản trò chơi:","Đổi mã trong trò chơi.","Sao chép mã","Cài đặt thông báo"],
 ar:["🎁 رمز هدية جديد!","إصدار اللعبة:","استخدم الرمز داخل اللعبة.","نسخ الرمز","إعدادات الإشعارات"],
 zh:["🎁 新禮包碼！","遊戲版本：","請在遊戲中兌換代碼。","複製代碼","通知設定"],
-hr:["🎁 Novi poklon-kod!","Verzija igre:","Iskoristite kod u igri.","Kopiraj kod","Postavke obavijesti"]};
+hr:["🎁 Novi poklon-kod!","Verzija igre:","Iskoristite kod u igri.","Kopiraj kod","Postavke obavijesti"],
+it:["🎁 Nuovo codice regalo!","Versione del gioco:","Riscatta il codice nel gioco.","Copia codice","Impostazioni notifiche"]};
 const categories:Record<string,string>={v3:"China V3",v1:"China V1",global:"Global"};
 const fields:Record<string,string>={v3:"v3",v1:"v1",global:"global_codes"};
 function template(language:string,category:string,code:string){const m=msg[language]||msg.en;return {text:m[0]+"\n\n"+m[1]+" "+categories[category]+"\n\n"+code+"\n\n"+m[2],reply_markup:{inline_keyboard:[[{text:m[3],copy_text:{text:code}}],[{text:m[4],url:"https://t.me/AOZV3CommunityBot?startapp=notifications"}]]}}}
