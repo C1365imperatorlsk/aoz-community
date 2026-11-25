@@ -30,7 +30,9 @@ Deno.serve(async(req:Request)=>{
    const h:Record<string,string>={apikey:service,Authorization:"Bearer "+service,"Content-Type":"application/json"};
    if(prefer)h.Prefer=prefer;
    const r=await fetch(base+"/rest/v1/"+path,{method,headers:h,body:body===undefined?undefined:JSON.stringify(body),signal:AbortSignal.timeout(10000)});
-   if(!r.ok)throw new Error("db");return r.status===204?null:await r.json()
+   if(!r.ok){console.warn("aoz_pilot_db_error",method,r.status);throw new Error("db")}
+   // PostgREST return=minimal may return 201 or 204 with an empty body.
+   const payload=await r.text();return payload.trim()?JSON.parse(payload):null
   };
   const owner=()=>rest("aoz_notification_owner?singleton=eq.true&select=telegram_id,test_status");
   let o=(await owner())[0];
