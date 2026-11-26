@@ -32,7 +32,7 @@ function renderOfficerEquipment({section,mode,state,D,t,e,L,node,row,field,list,
  const variants=source.filter(r=>r[1]===state.attrGroup);if(!variants.some(r=>r[0]===state.attrVariant))state.attrVariant=variants[0][0];
  field(fields,w[10],variants.map(r=>[r[0],w[11]+' '+r[3]+' · '+w[12]+' '+r[0]]),state.attrVariant,v=>{state.attrVariant=v;save();render()});
  const v=variants.find(r=>r[0]===state.attrVariant);
- const refresh=range(fields,1,30,'attrFrom','attrTo',(x,y)=>{result.replaceChildren(node('h3','',attr(v[2])));row(result,w[11],v[3]);row(result,w[13],fmt(v[5]));row(result,w[9],fmt(v[6][x-1])+' → '+fmt(v[6][y-1]));row(result,e[9],fmt(v[7][x-1])+' → '+fmt(v[7][y-1]));row(result,e[14],fmt(D.superXP.slice(x,y).reduce((a,b)=>a+b,0)));result.append(node('p','epSmall',w[14]));});refresh();return;
+ const refresh=range(fields,1,30,'attrFrom','attrTo',(x,y)=>{result.replaceChildren(node('h3','',attr(v[2])));row(result,w[11],v[3]);row(result,w[13],fmt(v[5]));row(result,w[9],fmt(v[6][x-1])+' → '+fmt(v[6][y-1]));row(result,e[9],fmt(v[7][x-1])+' → '+fmt(v[7][y-1]));row(result,e[14],fmt(officerRangeCost(D.superXP,x,y)));result.append(node('p','epSmall',w[14]));});refresh();return;
  }
  const owners=[...new Set(E.eq.map(x=>x.owner))];if(!owners.includes(state.eqOwner))state.eqOwner=owners[0];
  field(fields,e[3],owners.map(id=>[id,D.roster.find(r=>r[0]===id)[1]]),state.eqOwner,v=>{state.eqOwner=v;state.eqId=null;state.eqSkill=null;save();render()});
