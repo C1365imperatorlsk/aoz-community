@@ -298,7 +298,7 @@ hubIcons.download='<path d="M12 3v12m-5-5 5 5 5-5M4 15v6h16v-6"/>';const hubScre
 const hubCalcs=['build','titan','plane','officer','tech','equip'],hubServices=['download','codes','guide','events','city'];
 let hubActive='home';
 function hubShow(key,scroll=true){if(!hubScreens[key])return;hubActive=key;for(const [k,id] of Object.entries(hubScreens))$(id).hidden=k!==key;document.querySelectorAll('.hubnav [data-screen]').forEach(el=>{if(el.dataset.screen===key)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current')});if(scroll)window.scrollTo(0,0)}
-function hubTiles(id,keys){const l=hubCopy[lang()];$(id).replaceChildren();for(const k of keys){const btn=document.createElement('button');btn.type='button';const available=k==='build'||k==='download'||k==='titan'||k==='editor'||k==='plane'||(k==='officer'&&!!hubScreens.officer);btn.className='hubtile'+(available?' live':'');btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+hubIcons[k]+'</svg><strong>'+l[k]+'</strong><small>'+ (available?l.live:l.soon)+'</small>';if(available)btn.onclick=()=>hubShow(k);else btn.disabled=true;$(id).append(btn)}}
+function hubTiles(id,keys){const l=hubCopy[lang()];$(id).replaceChildren();for(const k of keys){const btn=document.createElement('button');btn.type='button';const available=k==='build'||k==='download'||k==='titan'||k==='editor'||k==='plane'||(k==='biolab'&&!!hubScreens.biolab)||(k==='officer'&&!!hubScreens.officer);btn.className='hubtile'+(available?' live':'');btn.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true">'+hubIcons[k]+'</svg><strong>'+l[k]+'</strong><small>'+ (available?l.live:l.soon)+'</small>';if(available)btn.onclick=()=>hubShow(k);else btn.disabled=true;$(id).append(btn)}}
 for(const [k,v] of Object.entries({"ru":{"shareApp":"Поделиться приложением","shareHint":"Отправьте HUB друзьям или в альянс","shareText":"AOZ COMMUNITY HUB — бесплатные калькуляторы и полезные инструменты для игроков Age of Origins. Попробуйте!"},"en":{"shareApp":"Share the app","shareHint":"Send HUB to friends or your alliance","shareText":"AOZ COMMUNITY HUB — free calculators and useful tools for Age of Origins players. Give it a try!"},"es":{"shareApp":"Compartir la aplicación","shareHint":"Envía HUB a tus amigos o a tu alianza","shareText":"AOZ COMMUNITY HUB — calculadoras gratuitas y herramientas útiles para jugadores de Age of Origins. ¡Pruébalo!"},"vi":{"shareApp":"Chia sẻ ứng dụng","shareHint":"Gửi HUB cho bạn bè hoặc liên minh","shareText":"AOZ COMMUNITY HUB — công cụ tính toán miễn phí và các tiện ích hữu ích cho người chơi Age of Origins. Hãy thử ngay!"},"ar":{"shareApp":"مشاركة التطبيق","shareHint":"شارك HUB مع أصدقائك أو تحالفك","shareText":"AOZ COMMUNITY HUB — حاسبات مجانية وأدوات مفيدة للاعبي Age of Origins. جرّبه!"}}))Object.assign(hubCopy[k],v);
 function hubShareUrl(code){const l=hubCopy[code]||hubCopy.en;return 'https://t.me/share/url?url='+encodeURIComponent('https://t.me/AOZV3CommunityBot?startapp')+'&text='+encodeURIComponent(l.shareText);}
 function hubLabels(){const l=hubCopy[lang()];$('hubShare').href=hubShareUrl(lang());document.querySelectorAll('[data-ui]').forEach(el=>el.textContent=l[el.dataset.ui]);hubTiles('homeCalcTiles',hubCalcs);hubTiles('allCalcTiles',hubCalcs);hubTiles('homeGuideTiles',hubServices.filter(k=>k!=='download'));hubTiles('allGuideTiles',hubServices);}
@@ -802,6 +802,21 @@ hubScreens.plane='hubPlane';const prior=hubLabels;hubLabels=()=>{prior();render(
 })();
 }catch(error){console.warn('HUB plane initialization',error)}
 try{installOfficerPlanner()}catch(error){console.warn('HUB officer initialization',error)}
+try{
+(function(){
+const names={ru:'Биолаборатория',en:'Biochemical Lab',es:'Laboratorio bioquímico',vi:'Phòng thí nghiệm sinh hóa',ar:'المختبر الكيميائي الحيوي',zh:'生化實驗室',hr:'Biokemijski laboratorij',it:'Laboratorio biochimico'};
+for(const [k,v] of Object.entries(names))hubCopy[k].biolab=v;
+hubIcons.biolab='<path d="M7 3c0 9 10 9 10 18M17 3c0 9-10 9-10 18M8 5h8M9 10h6M9 14h6M8 19h8"/>';
+const view=document.createElement('div');view.className='hubscreen';view.id='hubBiolab';view.hidden=true;
+const frame=document.createElement('iframe');frame.style.cssText='display:block;width:100%;height:800px;border:0;background:transparent';frame.title=names[lang()]||names.en;
+frame.loading='lazy';frame.src='biolab-preview.html?embedded=1&lang='+encodeURIComponent(lang());
+frame.addEventListener('load',()=>{try{const doc=frame.contentDocument;frame.contentWindow.setHubLanguage?.(lang());const fit=()=>{if(!view.hidden)frame.style.height=Math.max(500,doc.querySelector('main').scrollHeight+24)+'px'};new ResizeObserver(fit).observe(doc.querySelector('main'));new MutationObserver(fit).observe(view,{attributes:true,attributeFilter:['hidden']});fit()}catch(e){console.warn('Biolab frame sizing',e)}});
+view.append(frame);$('hubTools').after(view);hubScreens.biolab='hubBiolab';
+if(!hubCalcs.includes('biolab'))hubCalcs.splice(hubCalcs.indexOf('plane')+1,0,'biolab');
+const previous=hubLabels;hubLabels=()=>{previous();frame.title=names[lang()]||names.en;try{frame.contentWindow.setHubLanguage?.(lang())}catch(e){}};
+hubLabels();
+})();
+}catch(error){console.warn('HUB biolab development initialization',error)}
 window.aozFinishSplash?.();
 
 </script></body></html>
