@@ -1,0 +1,1284 @@
+{
+  "schema_version": 1,
+  "titan": "empress",
+  "name_ru": "Императрица",
+  "part": 1,
+  "source": {
+    "file": "5299.mp4",
+    "date": "2026-11-26",
+    "duration_seconds": 336.922056,
+    "reference_titan_level": 45,
+    "reference_phase": 5,
+    "reference_tier": 15,
+    "reference_note": "Данные считаны с предоставленной записи стороннего калькулятора; не сверены с самой игрой."
+  },
+  "notes_ru": [
+    "Все значения характеристик переписаны с кадров, без интерполяции. k = тысяча, M = миллион. Здоровье сохранено в отображаемом округлённом формате.",
+    "Ресурс на оранжевой карточке 1 > N — накопительный расход от уровня 1, название ресурса пока не подтверждено. Уровень 1 принят за нулевой расход относительно себя. Разница накопительных значений даёт расход перехода между уровнями; отображаемые сокращения k могут скрывать округление, если оно есть.",
+    "USD — показанная источником оценка покупки пакетов для 1 > N, не цена отдельного уровня и не подтверждённая цена игры; не вычитать USD для расчёта произвольного диапазона.",
+    "Звёзды: предел по уровню виден для двух активных талантов, в записи звёзды оставались на нуле. Эффекты и стоимость повышения звёзд не собраны. Условия открытия талантов и зависимость числовых статов от уровня/фазы/ступени титана не подтверждены."
+  ],
+  "talents": [
+    {
+      "id": "bone_spike",
+      "name_ru": "Костный шип",
+      "tier": "green",
+      "description_ru": "Обычная атака: запускается 1 раз каждые 2 сек., выпуская костные шипы для атаки врага и нанося указанное количество урона.",
+      "interval_seconds": 2,
+      "star_skill": {
+        "name_ru": "Заряд костяных игл",
+        "description_ru": "Упорство: урон всех родов войск повышается; за каждые 3 секунды выживания войска наносимый урон увеличивается, суммируется до 3 раз.",
+        "observed_stars": 0,
+        "observed_bonus_percent": 0,
+        "per_star_cost": null,
+        "per_star_stats": null
+      },
+      "source_range_seconds": [
+        4.3,
+        67.7
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cumulative_resource_from_level_1": 0,
+          "resource_display": "-",
+          "usd_estimate_from_level_1": 0,
+          "stats": {
+            "damage_percent": 100
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 2,
+          "cumulative_resource_from_level_1": 9,
+          "resource_display": "9",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "damage_percent": 102
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 3,
+          "cumulative_resource_from_level_1": 23,
+          "resource_display": "23",
+          "usd_estimate_from_level_1": 9.98,
+          "stats": {
+            "damage_percent": 104
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 4,
+          "cumulative_resource_from_level_1": 41,
+          "resource_display": "41",
+          "usd_estimate_from_level_1": 14.97,
+          "stats": {
+            "damage_percent": 106
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 5,
+          "cumulative_resource_from_level_1": 68,
+          "resource_display": "68",
+          "usd_estimate_from_level_1": 19.96,
+          "stats": {
+            "damage_percent": 108
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 6,
+          "cumulative_resource_from_level_1": 104,
+          "resource_display": "104",
+          "usd_estimate_from_level_1": 34.93,
+          "stats": {
+            "damage_percent": 110
+          },
+          "max_stars": 1
+        },
+        {
+          "level": 7,
+          "cumulative_resource_from_level_1": 149,
+          "resource_display": "149",
+          "usd_estimate_from_level_1": 44.91,
+          "stats": {
+            "damage_percent": 112
+          },
+          "max_stars": 2
+        },
+        {
+          "level": 8,
+          "cumulative_resource_from_level_1": 203,
+          "resource_display": "203",
+          "usd_estimate_from_level_1": 59.88,
+          "stats": {
+            "damage_percent": 114
+          },
+          "max_stars": 3
+        },
+        {
+          "level": 9,
+          "cumulative_resource_from_level_1": 266,
+          "resource_display": "266",
+          "usd_estimate_from_level_1": 79.84,
+          "stats": {
+            "damage_percent": 116
+          },
+          "max_stars": 4
+        },
+        {
+          "level": 10,
+          "cumulative_resource_from_level_1": 338,
+          "resource_display": "338",
+          "usd_estimate_from_level_1": 99.8,
+          "stats": {
+            "damage_percent": 118
+          },
+          "max_stars": 5
+        },
+        {
+          "level": 11,
+          "cumulative_resource_from_level_1": 424,
+          "resource_display": "424",
+          "usd_estimate_from_level_1": 124.75,
+          "stats": {
+            "damage_percent": 120
+          },
+          "max_stars": 6
+        },
+        {
+          "level": 12,
+          "cumulative_resource_from_level_1": 523,
+          "resource_display": "523",
+          "usd_estimate_from_level_1": 154.69,
+          "stats": {
+            "damage_percent": 122
+          },
+          "max_stars": 7
+        },
+        {
+          "level": 13,
+          "cumulative_resource_from_level_1": 636,
+          "resource_display": "636",
+          "usd_estimate_from_level_1": 189.62,
+          "stats": {
+            "damage_percent": 124
+          },
+          "max_stars": 8
+        },
+        {
+          "level": 14,
+          "cumulative_resource_from_level_1": 762,
+          "resource_display": "762",
+          "usd_estimate_from_level_1": 224.55,
+          "stats": {
+            "damage_percent": 126
+          },
+          "max_stars": 9
+        },
+        {
+          "level": 15,
+          "cumulative_resource_from_level_1": 902,
+          "resource_display": "902",
+          "usd_estimate_from_level_1": 269.46,
+          "stats": {
+            "damage_percent": 128
+          },
+          "max_stars": 10
+        },
+        {
+          "level": 16,
+          "cumulative_resource_from_level_1": 1078,
+          "resource_display": "1.078k",
+          "usd_estimate_from_level_1": 319.36,
+          "stats": {
+            "damage_percent": 130
+          },
+          "max_stars": 11
+        },
+        {
+          "level": 17,
+          "cumulative_resource_from_level_1": 1288,
+          "resource_display": "1.288k",
+          "usd_estimate_from_level_1": 379.24,
+          "stats": {
+            "damage_percent": 132
+          },
+          "max_stars": 12
+        },
+        {
+          "level": 18,
+          "cumulative_resource_from_level_1": 1540,
+          "resource_display": "1.54k",
+          "usd_estimate_from_level_1": 454.09,
+          "stats": {
+            "damage_percent": 134
+          },
+          "max_stars": 13
+        },
+        {
+          "level": 19,
+          "cumulative_resource_from_level_1": 1918,
+          "resource_display": "1.918k",
+          "usd_estimate_from_level_1": 563.87,
+          "stats": {
+            "damage_percent": 136
+          },
+          "max_stars": 14
+        },
+        {
+          "level": 20,
+          "cumulative_resource_from_level_1": 2371,
+          "resource_display": "2.371k",
+          "usd_estimate_from_level_1": 698.6,
+          "stats": {
+            "damage_percent": 138
+          },
+          "max_stars": 15
+        }
+      ]
+    },
+    {
+      "id": "zombie_queen_aura",
+      "name_ru": "Аура Королевы зомби",
+      "tier": "green",
+      "description_ru": "Навык ауры: увеличивает атаку, защиту и здоровье биозомби в армии Императрицы в бою.",
+      "source_range_seconds": [
+        70.7,
+        125.3
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cumulative_resource_from_level_1": 0,
+          "resource_display": "-",
+          "usd_estimate_from_level_1": 0,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 1.7
+          }
+        },
+        {
+          "level": 2,
+          "cumulative_resource_from_level_1": 5,
+          "resource_display": "5",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 3.4
+          }
+        },
+        {
+          "level": 3,
+          "cumulative_resource_from_level_1": 13,
+          "resource_display": "13",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 5.1
+          }
+        },
+        {
+          "level": 4,
+          "cumulative_resource_from_level_1": 23,
+          "resource_display": "23",
+          "usd_estimate_from_level_1": 9.98,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 6.8
+          }
+        },
+        {
+          "level": 5,
+          "cumulative_resource_from_level_1": 38,
+          "resource_display": "38",
+          "usd_estimate_from_level_1": 14.97,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 8.5
+          }
+        },
+        {
+          "level": 6,
+          "cumulative_resource_from_level_1": 58,
+          "resource_display": "58",
+          "usd_estimate_from_level_1": 19.96,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 10.2
+          }
+        },
+        {
+          "level": 7,
+          "cumulative_resource_from_level_1": 83,
+          "resource_display": "83",
+          "usd_estimate_from_level_1": 24.95,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 11.9
+          }
+        },
+        {
+          "level": 8,
+          "cumulative_resource_from_level_1": 113,
+          "resource_display": "113",
+          "usd_estimate_from_level_1": 34.93,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 13.7
+          }
+        },
+        {
+          "level": 9,
+          "cumulative_resource_from_level_1": 148,
+          "resource_display": "148",
+          "usd_estimate_from_level_1": 44.91,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 15.4
+          }
+        },
+        {
+          "level": 10,
+          "cumulative_resource_from_level_1": 188,
+          "resource_display": "188",
+          "usd_estimate_from_level_1": 59.88,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 17.1
+          }
+        },
+        {
+          "level": 11,
+          "cumulative_resource_from_level_1": 236,
+          "resource_display": "236",
+          "usd_estimate_from_level_1": 69.86,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 18.8
+          }
+        },
+        {
+          "level": 12,
+          "cumulative_resource_from_level_1": 291,
+          "resource_display": "291",
+          "usd_estimate_from_level_1": 89.82,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 20.5
+          }
+        },
+        {
+          "level": 13,
+          "cumulative_resource_from_level_1": 354,
+          "resource_display": "354",
+          "usd_estimate_from_level_1": 104.79,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 22.2
+          }
+        },
+        {
+          "level": 14,
+          "cumulative_resource_from_level_1": 424,
+          "resource_display": "424",
+          "usd_estimate_from_level_1": 124.75,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 23.9
+          }
+        },
+        {
+          "level": 15,
+          "cumulative_resource_from_level_1": 502,
+          "resource_display": "502",
+          "usd_estimate_from_level_1": 149.7,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 25.7
+          }
+        },
+        {
+          "level": 16,
+          "cumulative_resource_from_level_1": 600,
+          "resource_display": "600",
+          "usd_estimate_from_level_1": 179.64,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 27.5
+          }
+        },
+        {
+          "level": 17,
+          "cumulative_resource_from_level_1": 717,
+          "resource_display": "717",
+          "usd_estimate_from_level_1": 214.57,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 29.3
+          }
+        },
+        {
+          "level": 18,
+          "cumulative_resource_from_level_1": 857,
+          "resource_display": "857",
+          "usd_estimate_from_level_1": 254.49,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 31.1
+          }
+        },
+        {
+          "level": 19,
+          "cumulative_resource_from_level_1": 1067,
+          "resource_display": "1.067k",
+          "usd_estimate_from_level_1": 314.37,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 32.9
+          }
+        },
+        {
+          "level": 20,
+          "cumulative_resource_from_level_1": 1319,
+          "resource_display": "1.319k",
+          "usd_estimate_from_level_1": 389.22,
+          "stats": {
+            "biotroop_attack_defense_health_percent": 34.7
+          }
+        }
+      ]
+    },
+    {
+      "id": "protector",
+      "name_ru": "Защитник",
+      "tier": "green",
+      "description_ru": "Увеличивает здоровье и защиту войск и биозомби.",
+      "source_range_seconds": [
+        127,
+        169
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cumulative_resource_from_level_1": 0,
+          "resource_display": "-",
+          "usd_estimate_from_level_1": 0,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 1
+          }
+        },
+        {
+          "level": 2,
+          "cumulative_resource_from_level_1": 5,
+          "resource_display": "5",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 2
+          }
+        },
+        {
+          "level": 3,
+          "cumulative_resource_from_level_1": 13,
+          "resource_display": "13",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 3.1
+          }
+        },
+        {
+          "level": 4,
+          "cumulative_resource_from_level_1": 23,
+          "resource_display": "23",
+          "usd_estimate_from_level_1": 9.98,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 4.2
+          }
+        },
+        {
+          "level": 5,
+          "cumulative_resource_from_level_1": 38,
+          "resource_display": "38",
+          "usd_estimate_from_level_1": 14.97,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 5.3
+          }
+        },
+        {
+          "level": 6,
+          "cumulative_resource_from_level_1": 58,
+          "resource_display": "58",
+          "usd_estimate_from_level_1": 19.96,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 6.4
+          }
+        },
+        {
+          "level": 7,
+          "cumulative_resource_from_level_1": 83,
+          "resource_display": "83",
+          "usd_estimate_from_level_1": 24.95,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 7.5
+          }
+        },
+        {
+          "level": 8,
+          "cumulative_resource_from_level_1": 113,
+          "resource_display": "113",
+          "usd_estimate_from_level_1": 34.93,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 8.6
+          }
+        },
+        {
+          "level": 9,
+          "cumulative_resource_from_level_1": 148,
+          "resource_display": "148",
+          "usd_estimate_from_level_1": 44.91,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 9.7
+          }
+        },
+        {
+          "level": 10,
+          "cumulative_resource_from_level_1": 188,
+          "resource_display": "188",
+          "usd_estimate_from_level_1": 59.88,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 10.8
+          }
+        },
+        {
+          "level": 11,
+          "cumulative_resource_from_level_1": 236,
+          "resource_display": "236",
+          "usd_estimate_from_level_1": 69.86,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 11.9
+          }
+        },
+        {
+          "level": 12,
+          "cumulative_resource_from_level_1": 291,
+          "resource_display": "291",
+          "usd_estimate_from_level_1": 89.82,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 13
+          }
+        },
+        {
+          "level": 13,
+          "cumulative_resource_from_level_1": 354,
+          "resource_display": "354",
+          "usd_estimate_from_level_1": 104.79,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 14.1
+          }
+        },
+        {
+          "level": 14,
+          "cumulative_resource_from_level_1": 424,
+          "resource_display": "424",
+          "usd_estimate_from_level_1": 124.75,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 15.2
+          }
+        },
+        {
+          "level": 15,
+          "cumulative_resource_from_level_1": 502,
+          "resource_display": "502",
+          "usd_estimate_from_level_1": 149.7,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 16.3
+          }
+        },
+        {
+          "level": 16,
+          "cumulative_resource_from_level_1": 600,
+          "resource_display": "600",
+          "usd_estimate_from_level_1": 179.64,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 17.4
+          }
+        },
+        {
+          "level": 17,
+          "cumulative_resource_from_level_1": 717,
+          "resource_display": "717",
+          "usd_estimate_from_level_1": 214.57,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 18.5
+          }
+        },
+        {
+          "level": 18,
+          "cumulative_resource_from_level_1": 857,
+          "resource_display": "857",
+          "usd_estimate_from_level_1": 254.49,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 19.6
+          }
+        },
+        {
+          "level": 19,
+          "cumulative_resource_from_level_1": 1067,
+          "resource_display": "1.067k",
+          "usd_estimate_from_level_1": 314.37,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 20.7
+          }
+        },
+        {
+          "level": 20,
+          "cumulative_resource_from_level_1": 1319,
+          "resource_display": "1.319k",
+          "usd_estimate_from_level_1": 389.22,
+          "stats": {
+            "troop_and_biotroop_health_defense_percent": 21.8
+          }
+        }
+      ]
+    },
+    {
+      "id": "queen_inspiration",
+      "name_ru": "Вдохновение Королевы",
+      "tier": "blue",
+      "description_ru": "Боевой навык, активируется 1 раз каждые 10 сек., увеличивая общую атаку всех ваших типов бойцов, дополнительно атаку биозомби, длится 5 сек.",
+      "interval_seconds": 10,
+      "duration_seconds": 5,
+      "star_skill": {
+        "name_ru": "Охота императрицы",
+        "description_ru": "После применения «Вдохновения королевы» Императрицей урон своих войск по бойцам дальнего боя повышается на 5 сек.",
+        "observed_stars": 0,
+        "observed_bonus_percent": 0,
+        "per_star_cost": null,
+        "per_star_stats": null
+      },
+      "source_range_seconds": [
+        171,
+        225
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cumulative_resource_from_level_1": 0,
+          "resource_display": "-",
+          "usd_estimate_from_level_1": 0,
+          "stats": {
+            "all_troop_attack_percent": 11.1,
+            "additional_biotroop_attack_percent": 5.5
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 2,
+          "cumulative_resource_from_level_1": 14,
+          "resource_display": "14",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "all_troop_attack_percent": 12.6,
+            "additional_biotroop_attack_percent": 6.3
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 3,
+          "cumulative_resource_from_level_1": 35,
+          "resource_display": "35",
+          "usd_estimate_from_level_1": 14.97,
+          "stats": {
+            "all_troop_attack_percent": 14.2,
+            "additional_biotroop_attack_percent": 7.1
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 4,
+          "cumulative_resource_from_level_1": 62,
+          "resource_display": "62",
+          "usd_estimate_from_level_1": 19.96,
+          "stats": {
+            "all_troop_attack_percent": 15.8,
+            "additional_biotroop_attack_percent": 7.9
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 5,
+          "cumulative_resource_from_level_1": 103,
+          "resource_display": "103",
+          "usd_estimate_from_level_1": 34.93,
+          "stats": {
+            "all_troop_attack_percent": 17.4,
+            "additional_biotroop_attack_percent": 8.7
+          },
+          "max_stars": 0
+        },
+        {
+          "level": 6,
+          "cumulative_resource_from_level_1": 157,
+          "resource_display": "157",
+          "usd_estimate_from_level_1": 49.9,
+          "stats": {
+            "all_troop_attack_percent": 19,
+            "additional_biotroop_attack_percent": 9.5
+          },
+          "max_stars": 1
+        },
+        {
+          "level": 7,
+          "cumulative_resource_from_level_1": 225,
+          "resource_display": "225",
+          "usd_estimate_from_level_1": 69.86,
+          "stats": {
+            "all_troop_attack_percent": 20.6,
+            "additional_biotroop_attack_percent": 10.3
+          },
+          "max_stars": 2
+        },
+        {
+          "level": 8,
+          "cumulative_resource_from_level_1": 306,
+          "resource_display": "306",
+          "usd_estimate_from_level_1": 89.82,
+          "stats": {
+            "all_troop_attack_percent": 22.2,
+            "additional_biotroop_attack_percent": 11.1
+          },
+          "max_stars": 3
+        },
+        {
+          "level": 9,
+          "cumulative_resource_from_level_1": 401,
+          "resource_display": "401",
+          "usd_estimate_from_level_1": 119.76,
+          "stats": {
+            "all_troop_attack_percent": 23.7,
+            "additional_biotroop_attack_percent": 11.8
+          },
+          "max_stars": 4
+        },
+        {
+          "level": 10,
+          "cumulative_resource_from_level_1": 509,
+          "resource_display": "509",
+          "usd_estimate_from_level_1": 149.7,
+          "stats": {
+            "all_troop_attack_percent": 25.3,
+            "additional_biotroop_attack_percent": 12.6
+          },
+          "max_stars": 5
+        },
+        {
+          "level": 11,
+          "cumulative_resource_from_level_1": 638,
+          "resource_display": "638",
+          "usd_estimate_from_level_1": 189.62,
+          "stats": {
+            "all_troop_attack_percent": 26.9,
+            "additional_biotroop_attack_percent": 13.4
+          },
+          "max_stars": 6
+        },
+        {
+          "level": 12,
+          "cumulative_resource_from_level_1": 787,
+          "resource_display": "787",
+          "usd_estimate_from_level_1": 234.53,
+          "stats": {
+            "all_troop_attack_percent": 28.5,
+            "additional_biotroop_attack_percent": 14.2
+          },
+          "max_stars": 7
+        },
+        {
+          "level": 13,
+          "cumulative_resource_from_level_1": 957,
+          "resource_display": "957",
+          "usd_estimate_from_level_1": 284.43,
+          "stats": {
+            "all_troop_attack_percent": 30.1,
+            "additional_biotroop_attack_percent": 15
+          },
+          "max_stars": 8
+        },
+        {
+          "level": 14,
+          "cumulative_resource_from_level_1": 1146,
+          "resource_display": "1.146k",
+          "usd_estimate_from_level_1": 339.32,
+          "stats": {
+            "all_troop_attack_percent": 31.7,
+            "additional_biotroop_attack_percent": 15.8
+          },
+          "max_stars": 9
+        },
+        {
+          "level": 15,
+          "cumulative_resource_from_level_1": 1356,
+          "resource_display": "1.356k",
+          "usd_estimate_from_level_1": 399.2,
+          "stats": {
+            "all_troop_attack_percent": 33.3,
+            "additional_biotroop_attack_percent": 16.6
+          },
+          "max_stars": 10
+        },
+        {
+          "level": 16,
+          "cumulative_resource_from_level_1": 1619,
+          "resource_display": "1.619k",
+          "usd_estimate_from_level_1": 479.04,
+          "stats": {
+            "all_troop_attack_percent": 34.9,
+            "additional_biotroop_attack_percent": 17.4
+          },
+          "max_stars": 11
+        },
+        {
+          "level": 17,
+          "cumulative_resource_from_level_1": 1934,
+          "resource_display": "1.934k",
+          "usd_estimate_from_level_1": 568.86,
+          "stats": {
+            "all_troop_attack_percent": 36.5,
+            "additional_biotroop_attack_percent": 18.2
+          },
+          "max_stars": 12
+        },
+        {
+          "level": 18,
+          "cumulative_resource_from_level_1": 2312,
+          "resource_display": "2.312k",
+          "usd_estimate_from_level_1": 678.64,
+          "stats": {
+            "all_troop_attack_percent": 38.1,
+            "additional_biotroop_attack_percent": 19
+          },
+          "max_stars": 13
+        },
+        {
+          "level": 19,
+          "cumulative_resource_from_level_1": 2878,
+          "resource_display": "2.878k",
+          "usd_estimate_from_level_1": 848.3,
+          "stats": {
+            "all_troop_attack_percent": 39.7,
+            "additional_biotroop_attack_percent": 19.8
+          },
+          "max_stars": 14
+        },
+        {
+          "level": 20,
+          "cumulative_resource_from_level_1": 3556,
+          "resource_display": "3.556k",
+          "usd_estimate_from_level_1": 1047.9,
+          "stats": {
+            "all_troop_attack_percent": 41.3,
+            "additional_biotroop_attack_percent": 20.6
+          },
+          "max_stars": 15
+        }
+      ]
+    },
+    {
+      "id": "powerful_inspiration",
+      "name_ru": "Мощное вдохновение",
+      "tier": "blue",
+      "description_ru": "Вдохновение Королевы дополнительно увеличивает общую защиту и общее здоровье всех ваших бойцов.",
+      "source_range_seconds": [
+        227,
+        285
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cumulative_resource_from_level_1": 0,
+          "resource_display": "-",
+          "usd_estimate_from_level_1": 0,
+          "stats": {
+            "additional_defense_health_percent": 5.5
+          }
+        },
+        {
+          "level": 2,
+          "cumulative_resource_from_level_1": 8,
+          "resource_display": "8",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "additional_defense_health_percent": 6.3
+          }
+        },
+        {
+          "level": 3,
+          "cumulative_resource_from_level_1": 20,
+          "resource_display": "20",
+          "usd_estimate_from_level_1": 9.98,
+          "stats": {
+            "additional_defense_health_percent": 7.1
+          }
+        },
+        {
+          "level": 4,
+          "cumulative_resource_from_level_1": 35,
+          "resource_display": "35",
+          "usd_estimate_from_level_1": 14.97,
+          "stats": {
+            "additional_defense_health_percent": 7.9
+          }
+        },
+        {
+          "level": 5,
+          "cumulative_resource_from_level_1": 58,
+          "resource_display": "58",
+          "usd_estimate_from_level_1": 19.96,
+          "stats": {
+            "additional_defense_health_percent": 8.7
+          }
+        },
+        {
+          "level": 6,
+          "cumulative_resource_from_level_1": 88,
+          "resource_display": "88",
+          "usd_estimate_from_level_1": 29.94,
+          "stats": {
+            "additional_defense_health_percent": 9.5
+          }
+        },
+        {
+          "level": 7,
+          "cumulative_resource_from_level_1": 126,
+          "resource_display": "126",
+          "usd_estimate_from_level_1": 39.92,
+          "stats": {
+            "additional_defense_health_percent": 10.3
+          }
+        },
+        {
+          "level": 8,
+          "cumulative_resource_from_level_1": 171,
+          "resource_display": "171",
+          "usd_estimate_from_level_1": 54.89,
+          "stats": {
+            "additional_defense_health_percent": 11.1
+          }
+        },
+        {
+          "level": 9,
+          "cumulative_resource_from_level_1": 224,
+          "resource_display": "224",
+          "usd_estimate_from_level_1": 69.86,
+          "stats": {
+            "additional_defense_health_percent": 11.8
+          }
+        },
+        {
+          "level": 10,
+          "cumulative_resource_from_level_1": 284,
+          "resource_display": "284",
+          "usd_estimate_from_level_1": 84.83,
+          "stats": {
+            "additional_defense_health_percent": 12.6
+          }
+        },
+        {
+          "level": 11,
+          "cumulative_resource_from_level_1": 356,
+          "resource_display": "356",
+          "usd_estimate_from_level_1": 104.79,
+          "stats": {
+            "additional_defense_health_percent": 13.4
+          }
+        },
+        {
+          "level": 12,
+          "cumulative_resource_from_level_1": 439,
+          "resource_display": "439",
+          "usd_estimate_from_level_1": 129.74,
+          "stats": {
+            "additional_defense_health_percent": 14.2
+          }
+        },
+        {
+          "level": 13,
+          "cumulative_resource_from_level_1": 534,
+          "resource_display": "534",
+          "usd_estimate_from_level_1": 159.68,
+          "stats": {
+            "additional_defense_health_percent": 15
+          }
+        },
+        {
+          "level": 14,
+          "cumulative_resource_from_level_1": 639,
+          "resource_display": "639",
+          "usd_estimate_from_level_1": 189.62,
+          "stats": {
+            "additional_defense_health_percent": 15.8
+          }
+        },
+        {
+          "level": 15,
+          "cumulative_resource_from_level_1": 756,
+          "resource_display": "756",
+          "usd_estimate_from_level_1": 224.55,
+          "stats": {
+            "additional_defense_health_percent": 16.6
+          }
+        },
+        {
+          "level": 16,
+          "cumulative_resource_from_level_1": 903,
+          "resource_display": "903",
+          "usd_estimate_from_level_1": 269.46,
+          "stats": {
+            "additional_defense_health_percent": 17.4
+          }
+        },
+        {
+          "level": 17,
+          "cumulative_resource_from_level_1": 1078,
+          "resource_display": "1.078k",
+          "usd_estimate_from_level_1": 319.36,
+          "stats": {
+            "additional_defense_health_percent": 18.2
+          }
+        },
+        {
+          "level": 18,
+          "cumulative_resource_from_level_1": 1288,
+          "resource_display": "1.288k",
+          "usd_estimate_from_level_1": 379.24,
+          "stats": {
+            "additional_defense_health_percent": 19
+          }
+        },
+        {
+          "level": 19,
+          "cumulative_resource_from_level_1": 1603,
+          "resource_display": "1.603k",
+          "usd_estimate_from_level_1": 474.05,
+          "stats": {
+            "additional_defense_health_percent": 19.8
+          }
+        },
+        {
+          "level": 20,
+          "cumulative_resource_from_level_1": 1980,
+          "resource_display": "1.98k",
+          "usd_estimate_from_level_1": 583.83,
+          "stats": {
+            "additional_defense_health_percent": 20.6
+          }
+        }
+      ]
+    },
+    {
+      "id": "multiple_armors",
+      "name_ru": "Множество доспехов",
+      "tier": "blue",
+      "description_ru": "Повышает свою защиту и здоровье.",
+      "source_range_seconds": [
+        286.7,
+        334
+      ],
+      "levels": [
+        {
+          "level": 1,
+          "cumulative_resource_from_level_1": 0,
+          "resource_display": "-",
+          "usd_estimate_from_level_1": 0,
+          "stats": {
+            "self_defense": 2,
+            "self_health_display": "871.8k"
+          }
+        },
+        {
+          "level": 2,
+          "cumulative_resource_from_level_1": 8,
+          "resource_display": "8",
+          "usd_estimate_from_level_1": 4.99,
+          "stats": {
+            "self_defense": 4,
+            "self_health_display": "1.74M"
+          }
+        },
+        {
+          "level": 3,
+          "cumulative_resource_from_level_1": 20,
+          "resource_display": "20",
+          "usd_estimate_from_level_1": 9.98,
+          "stats": {
+            "self_defense": 7,
+            "self_health_display": "2.62M"
+          }
+        },
+        {
+          "level": 4,
+          "cumulative_resource_from_level_1": 35,
+          "resource_display": "35",
+          "usd_estimate_from_level_1": 14.97,
+          "stats": {
+            "self_defense": 10,
+            "self_health_display": "3.49M"
+          }
+        },
+        {
+          "level": 5,
+          "cumulative_resource_from_level_1": 58,
+          "resource_display": "58",
+          "usd_estimate_from_level_1": 19.96,
+          "stats": {
+            "self_defense": 13,
+            "self_health_display": "4.36M"
+          }
+        },
+        {
+          "level": 6,
+          "cumulative_resource_from_level_1": 88,
+          "resource_display": "88",
+          "usd_estimate_from_level_1": 29.94,
+          "stats": {
+            "self_defense": 16,
+            "self_health_display": "5.23M"
+          }
+        },
+        {
+          "level": 7,
+          "cumulative_resource_from_level_1": 126,
+          "resource_display": "126",
+          "usd_estimate_from_level_1": 39.92,
+          "stats": {
+            "self_defense": 19,
+            "self_health_display": "6.1M"
+          }
+        },
+        {
+          "level": 8,
+          "cumulative_resource_from_level_1": 171,
+          "resource_display": "171",
+          "usd_estimate_from_level_1": 54.89,
+          "stats": {
+            "self_defense": 22,
+            "self_health_display": "6.97M"
+          }
+        },
+        {
+          "level": 9,
+          "cumulative_resource_from_level_1": 224,
+          "resource_display": "224",
+          "usd_estimate_from_level_1": 69.86,
+          "stats": {
+            "self_defense": 25,
+            "self_health_display": "7.85M"
+          }
+        },
+        {
+          "level": 10,
+          "cumulative_resource_from_level_1": 284,
+          "resource_display": "284",
+          "usd_estimate_from_level_1": 84.83,
+          "stats": {
+            "self_defense": 28,
+            "self_health_display": "8.72M"
+          }
+        },
+        {
+          "level": 11,
+          "cumulative_resource_from_level_1": 356,
+          "resource_display": "356",
+          "usd_estimate_from_level_1": 104.79,
+          "stats": {
+            "self_defense": 31,
+            "self_health_display": "9.59M"
+          }
+        },
+        {
+          "level": 12,
+          "cumulative_resource_from_level_1": 439,
+          "resource_display": "439",
+          "usd_estimate_from_level_1": 129.74,
+          "stats": {
+            "self_defense": 34,
+            "self_health_display": "10.46M"
+          }
+        },
+        {
+          "level": 13,
+          "cumulative_resource_from_level_1": 534,
+          "resource_display": "534",
+          "usd_estimate_from_level_1": 159.68,
+          "stats": {
+            "self_defense": 37,
+            "self_health_display": "11.33M"
+          }
+        },
+        {
+          "level": 14,
+          "cumulative_resource_from_level_1": 639,
+          "resource_display": "639",
+          "usd_estimate_from_level_1": 189.62,
+          "stats": {
+            "self_defense": 40,
+            "self_health_display": "12.21M"
+          }
+        },
+        {
+          "level": 15,
+          "cumulative_resource_from_level_1": 756,
+          "resource_display": "756",
+          "usd_estimate_from_level_1": 224.55,
+          "stats": {
+            "self_defense": 43,
+            "self_health_display": "13.08M"
+          }
+        },
+        {
+          "level": 16,
+          "cumulative_resource_from_level_1": 903,
+          "resource_display": "903",
+          "usd_estimate_from_level_1": 269.46,
+          "stats": {
+            "self_defense": 46,
+            "self_health_display": "13.95M"
+          }
+        },
+        {
+          "level": 17,
+          "cumulative_resource_from_level_1": 1078,
+          "resource_display": "1.078k",
+          "usd_estimate_from_level_1": 319.36,
+          "stats": {
+            "self_defense": 49,
+            "self_health_display": "14.82M"
+          }
+        },
+        {
+          "level": 18,
+          "cumulative_resource_from_level_1": 1288,
+          "resource_display": "1.288k",
+          "usd_estimate_from_level_1": 379.24,
+          "stats": {
+            "self_defense": 52,
+            "self_health_display": "15.69M"
+          }
+        },
+        {
+          "level": 19,
+          "cumulative_resource_from_level_1": 1603,
+          "resource_display": "1.603k",
+          "usd_estimate_from_level_1": 474.05,
+          "stats": {
+            "self_defense": 55,
+            "self_health_display": "16.56M"
+          }
+        },
+        {
+          "level": 20,
+          "cumulative_resource_from_level_1": 1980,
+          "resource_display": "1.98k",
+          "usd_estimate_from_level_1": 583.83,
+          "stats": {
+            "self_defense": 58,
+            "self_health_display": "17.44M"
+          }
+        }
+      ]
+    }
+  ],
+  "progress": {
+    "completed_base_talents": 6,
+    "completed_base_levels": 120,
+    "next_talent_ru": "Кровавое пиршество",
+    "stars_pending": [
+      "Костный шип",
+      "Вдохновение Королевы"
+    ],
+    "other_titan_not_started": true
+  }
+}
