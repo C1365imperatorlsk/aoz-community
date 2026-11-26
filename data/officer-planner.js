@@ -23,10 +23,10 @@ function renderOfficerFullPower({section,state,D,t,e,L,node,row,field,list,save,
  state.powerSkills=clamp(state.powerSkills,0,slots*cap,0);state.powerActive=clamp(state.powerActive,0,activeMax,0);
  if(!state.powerParts||typeof state.powerParts!=='object'||Array.isArray(state.powerParts))state.powerParts={};
  if(!state.powerParts[r[0]]||typeof state.powerParts[r[0]]!=='object'||Array.isArray(state.powerParts[r[0]]))state.powerParts[r[0]]={};
- const parts=state.powerParts[r[0]],set=(k,v)=>{parts[k]=v;save();render()};
+ const parts=state.powerParts[r[0]],set=(k,v)=>{parts[k]=v;if(k.startsWith('eq'))parts.manual=null;save();render()};
  field(fields,e[3],D.roster.map(r=>[r[0],r[1]]),r[0],v=>{state.powerOfficer=v;state.powerStage=null;save();render()});
  field(fields,vw[8],list(1,55),state.powerLv,v=>{state.powerLv=v;save();render()});
- field(fields,rw[0],flat.map((a,i)=>[i,a.star+' ★ · '+e[6]+' '+a.stage]),state.powerStage,v=>{state.powerStage=v;save();render()});
+ field(fields,rw[0],flat.map((a,i)=>[i,a.star+' ★ · '+e[6]+' '+a.stage]),state.powerStage,v=>{if(flat[v].star!==st.star)parts.manual=null;state.powerStage=v;save();render()});
  field(fields,vw[9],list(0,slots*cap),state.powerSkills,v=>{state.powerSkills=v;save();render()});
  if(activeMax)field(fields,vw[10],list(0,activeMax),state.powerActive,v=>{state.powerActive=v;save();render()});
  const mastery=officerAuditData.ability[officerXPIndex(r)][state.powerLv-1]+st.v,base=Math.floor(mastery*4.5*(20+state.powerSkills*1.5+state.powerActive*2));
@@ -34,7 +34,7 @@ function renderOfficerFullPower({section,state,D,t,e,L,node,row,field,list,save,
  const nameEq=x=>officerEquipmentNames[L]?.[x.id-68681730]||x.name,nameSk=x=>officerEquipmentSkillNames[L]?.[x.id-101515266]||x.name;
  const items=officerEquipmentData.eq.filter(x=>x.owner===r[0]);
  if(items.length){
- const d=node('details','epBreakdown');d.append(node('summary','',ew[0]));fields.append(d);
+ const d=node('details','epBreakdown');d.open=true;d.append(node('summary','',ew[0]));fields.append(d);
  // Source config h_e_a = [3,4]. Slot order is preserved from the original owner equipment IDs.
  items.forEach((it,i)=>{
  const gate=i===0?3:4,box=node('div','epBody');d.append(box);box.append(node('h3','',nameEq(it)));
@@ -47,9 +47,9 @@ function renderOfficerFullPower({section,state,D,t,e,L,node,row,field,list,save,
  inp.onchange=()=>{const v=inp.value.trim()===''?null:Number(inp.value);parts.manual=Number.isInteger(v)&&v>=0&&v<=1000000000?v:null;save();render()};
  }
  const skins=D.skins.filter(x=>x[1]===r[0]);
- if(skins.length){const d=node('details','epBreakdown');d.append(node('summary','',e[1]));fields.append(d);const loc=officerLocalizedNames[L]||officerLocalizedNames.en;for(const sk of skins){const k='skin'+sk[0],lv=clamp(parts[k],-1,9,-1);parts[k]=lv;field(d,loc[1][D.skins.findIndex(x=>x[0]===sk[0])],[[-1,e[7]],...list(0,9)],lv,v=>set(k,v));if(lv>=0)skinPower+=D.skinPower[lv];}}
+ if(skins.length){const d=node('details','epBreakdown');d.open=true;d.append(node('summary','',e[1]));fields.append(d);const loc=officerLocalizedNames[L]||officerLocalizedNames.en;for(const sk of skins){const k='skin'+sk[0],lv=clamp(parts[k],-1,9,-1);parts[k]=lv;field(d,loc[1][D.skins.findIndex(x=>x[0]===sk[0])],[[-1,e[7]],...list(0,9)],lv,v=>set(k,v));if(lv>=0)skinPower+=D.skinPower[lv];}}
  const allowed=officerLearnableData.map.find(x=>x[0]===r[0])?.[2]||[];
- if(allowed.length&&st.star>=5){const d=node('details','epBreakdown');d.append(node('summary','',e[2]));fields.append(d);const opts=officerExtraStats.filter(a=>allowed.includes(a[1]));for(let i=0;i<5;i++){const k='attr'+i,choice=opts.find(a=>a[0]===parts[k]),id=choice?.[0]||0;field(d,w[9]+' '+(i+1),[[0,w[11]],...opts.map(a=>[a[0],officerAuditLabel(a[2],L)+' · '+ew[11]+' '+a[3]+' · '+fmt(a[6][29])+' · '+fmt(a[7][29])])],id,v=>set(k,v));if(choice){const lv=clamp(parts[k+'lv'],1,30,1);parts[k+'lv']=lv;field(d,w[10]+' '+(i+1),list(1,30),lv,v=>set(k+'lv',v));attrPower+=choice[7][lv-1]}}}
+ if(allowed.length&&st.star>=5){const d=node('details','epBreakdown');d.open=true;d.append(node('summary','',e[2]));fields.append(d);const opts=officerExtraStats.filter(a=>allowed.includes(a[1]));for(let i=0;i<5;i++){const k='attr'+i,choice=opts.find(a=>a[0]===parts[k]),id=choice?.[0]||0;field(d,w[9]+' '+(i+1),[[0,w[11]],...opts.map(a=>[a[0],officerAuditLabel(a[2],L)+' · '+ew[11]+' '+a[3]+' · '+fmt(a[6][29])+' · '+fmt(a[7][29])])],id,v=>set(k,v));if(choice){const lv=clamp(parts[k+'lv'],1,30,1);parts[k+'lv']=lv;field(d,w[10]+' '+(i+1),list(1,30),lv,v=>set(k+'lv',v));attrPower+=choice[7][lv-1]}}}
  const manual=items.length&&st.star>=3&&Number.isInteger(parts.manual)&&parts.manual>=0&&parts.manual<=1000000000,eqPower=manual?parts.manual:equip,total=base+eqPower+skinPower+attrPower,estimated=!manual&&equip>0;
  result.append(node('h3','',w[0]));row(result,vw[12],fmt(mastery));row(result,w[1],fmt(base));row(result,w[2],fmt(eqPower));row(result,w[3],fmt(skinPower));row(result,w[4],fmt(attrPower));row(result,estimated?w[6]:w[5],fmt(total));
  if(estimated)result.append(node('p','epSmall',w[13]));
