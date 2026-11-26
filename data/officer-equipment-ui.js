@@ -22,9 +22,14 @@ function renderOfficerEquipment({section,mode,state,D,t,e,L,node,row,field,list,
  function sync(){a.value=String(state[x]);b.value=String(state[y]);for(const o of b.options)o.disabled=+o.value<state[x];save();onChange(state[x],state[y])}return sync};
  function breakdown(rows,from,to,labels){if(to<=from)return;const d=node('details','epBreakdown');d.append(node('summary','',t[19]));for(let n=from;n<to;n++)d.append(node('div','epStep',n+' → '+(n+1)+' · '+fmt(rows[n][labels])));result.append(d)}
  if(mode===9){
- const groups=[...new Map(officerExtraStats.map(r=>[r[1],r[2]])).entries()];if(!groups.some(x=>x[0]===state.attrGroup))state.attrGroup=1;
+ const A=officerLearnableData,lw=A.words[L]||A.words.en,eligible=A.map.filter(m=>m[2].length);
+ if(state.attrOwner!==0&&!eligible.some(m=>m[0]===state.attrOwner))state.attrOwner=0;
+ field(fields,e[3],[[0,lw[3]],...eligible.map(m=>[m[0],D.roster.find(r=>r[0]===m[0])[1]])],state.attrOwner,v=>{state.attrOwner=v;state.attrGroup=null;state.attrVariant=null;save();render()});
+ const allowed=state.attrOwner===0?null:eligible.find(m=>m[0]===state.attrOwner)[2];
+ const source=officerExtraStats.filter(r=>!allowed||allowed.includes(r[1]));
+ const groups=[...new Map(source.map(r=>[r[1],r[2]])).entries()];if(!groups.some(x=>x[0]===state.attrGroup))state.attrGroup=groups[0][0];
  field(fields,w[9],groups.map(([i,id])=>[i,attr(id)]),state.attrGroup,v=>{state.attrGroup=v;state.attrVariant=null;save();render()});
- const variants=officerExtraStats.filter(r=>r[1]===state.attrGroup);if(!variants.some(r=>r[0]===state.attrVariant))state.attrVariant=variants[0][0];
+ const variants=source.filter(r=>r[1]===state.attrGroup);if(!variants.some(r=>r[0]===state.attrVariant))state.attrVariant=variants[0][0];
  field(fields,w[10],variants.map(r=>[r[0],w[11]+' '+r[3]+' · '+w[12]+' '+r[0]]),state.attrVariant,v=>{state.attrVariant=v;save();render()});
  const v=variants.find(r=>r[0]===state.attrVariant);
  const refresh=range(fields,1,30,'attrFrom','attrTo',(x,y)=>{result.replaceChildren(node('h3','',attr(v[2])));row(result,w[11],v[3]);row(result,w[13],fmt(v[5]));row(result,w[9],fmt(v[6][x-1])+' → '+fmt(v[6][y-1]));row(result,e[9],fmt(v[7][x-1])+' → '+fmt(v[7][y-1]));row(result,e[14],fmt(D.superXP.slice(x,y).reduce((a,b)=>a+b,0)));result.append(node('p','epSmall',w[14]));});refresh();return;
