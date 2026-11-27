@@ -199,7 +199,7 @@ html[dir="rtl"] .quickGameTitle{text-align:right}
 #hubBuild .bcProgress{height:8px}#hubBuild .bcProgress b{background:#386b92}#hubBuild .bcProgress i{background:#81d2e7}
 #hubBuild .bcLevelControls{border-color:#52758d}
 #hubBuild .bcPower{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0 0;padding:10px;border:1px solid #3e6074;border-radius:10px;background:#102635;color:#c1d9e7;font-size:12px}
-#hubBuild .bcPower strong{color:#9fe0bc;font-size:14px;text-align:end;overflow-wrap:anywhere}
+#hubBuild .bcPower strong{color:#9fe0bc;font-size:14px;text-align:end;overflow-wrap:anywhere}#hubBuild .bcPower[hidden]{display:none}
 #hubBuild .bcJump{padding:9px;margin:0 0 12px;min-height:40px;background:#193c50;color:#bdeafa;border:1px solid #4d849c;font-size:13px}
 #hubBuild .bcResource{border-color:#435b6c;background:radial-gradient(ellipse at 0% 0%,color-mix(in srgb,var(--bcColor) 12%,transparent),transparent 65%),#142334}
 #hubBuild .bcResource strong{font-size:clamp(15px,4vw,20px)}
@@ -657,7 +657,7 @@ labels();refreshPlanner();hubLabels();hubShow('home',false);ntInit();bdInit();
  const chosen=node('div','bcSelected'),selectedLabel=node('div','bcSelectedLabel'),selectedTitle=node('div','bcSelectedTitle'),levelView=node('div','bcLevelDisplay'),fromView=node('div'),toView=node('div'),fromNum=node('strong'),toNum=node('strong'),fromSmall=node('small'),toSmall=node('small'),progress=node('div','bcProgress'),targetBar=node('b'),currentBar=node('i');
  fromView.append(fromSmall,fromNum);toView.append(toSmall,toNum);levelView.append(fromView,node('span','bcLevelArrow','→'),toView);progress.append(targetBar,currentBar);chosen.append(selectedLabel,selectedTitle,levelView,progress);
  const controls=$('from').closest('.grid');controls.before(chosen);controls.classList.add('bcLevelControls');
- const jump=btn('bcJump','',()=>chosen.scrollIntoView({block:'start',behavior:'smooth'}));tiles.after(jump);
+ const jump=btn('bcJump','',()=>chosen.scrollIntoView({block:'start',behavior:window.matchMedia?.('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}));tiles.after(jump);
  const power=node('div','bcPower');chosen.append(power);
  const saveLabel=node('p','bcSaved');$('calc').after(saveLabel);
  function render(){const l=w(),k=$('building').value,meta=db.names[k];if(!meta)return;heading.textContent=l[0];subtitle.textContent=l[1];selectedLabel.textContent=l[7];selectedTitle.replaceChildren(icon(k),node('span','',name(k)));jump.textContent=ew()[0];fromSmall.textContent=s().fromLabel;toSmall.textContent=s().toLabel;const a=Number($('from').value),b=Number($('to').value);fromNum.textContent=k==='workshop'&&a===0?s().locked:fmt(a);toNum.textContent=fmt(b);targetBar.style.width=(b/meta.max*100)+'%';currentBar.style.width=(a/meta.max*100)+'%';const rr=typeof buildingReference!=='undefined'?buildingReference[k]:null;power.hidden=!rr||!rr[b]||(a>0&&!rr[a]);power.replaceChildren();if(!power.hidden){const p0=a===0?0:rr[a].power,p1=rr[b].power;power.append(node('span','',ew()[1]),node('strong','',fmt(p0)+' → '+fmt(p1)+' (+'+fmt(p1-p0)+')'))}cat.replaceChildren();tiles.replaceChildren();
