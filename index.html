@@ -816,7 +816,7 @@ labels();refreshPlanner();hubLabels();hubShow('home',false);ntInit();bdInit();
  function remember(entry){stack.push(entry);if(stack.length>60)stack.splice(1,1)}
  function setOption(id,value){const e=$(id);if(Array.from(e.options).some(o=>o.value===value))e.value=value}
  function restoreTitan(entry){if(entry.who===undefined)return;const changed=$('tWho').value!==entry.who||$('tMode').value!==entry.mode||fields.some(k=>$(k).value!==entry.values[k]);
- if(changed){setOption('tWho',entry.who);setOption('tMode',entry.mode);originalSetup(true);setOption('tItem',entry.values.tItem);setOption('tFrom',entry.values.tFrom);originalSetup(false);setOption('tTo',entry.values.tTo);setOption('tCount',entry.values.tCount)}
+ if(changed){setOption('tWho',entry.who);setOption('tMode',entry.mode);originalSetup(true);setOption('tItem',entry.values.tItem);setOption('tFrom',entry.values.tFrom);originalSetup(false);setOption('tTo',entry.values.tTo);setOption('tCount',entry.values.tCount);tvEvoEmpress()}
  who=$('tWho').value;mode=$('tMode').value;
  if(entry.calculated&&$('tResult').hidden&&!$('tCalc').hidden&&!$('tCalc').disabled)tCalculate();else if(!entry.calculated&&changed)tClear();
  }
