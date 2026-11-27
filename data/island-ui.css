@@ -3,3 +3,5 @@
 .is-wide{display:block;width:100%;padding:13px;border:1px solid #65dccc;border-radius:12px;background:linear-gradient(115deg,#235c60,#17384a);font-weight:700!important;margin:10px 0}.is-port-plan .is-fields{margin:0}.is-root[dir=rtl] .is-line strong{text-align:left}
 
 .is-catalog-toolbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:end;margin:10px 0}.is-catalog-toolbar .is-small{margin:0 0 9px;white-space:nowrap;font-variant-numeric:tabular-nums}.is-catalog-toolbar select{max-width:100%}.is-card small{overflow-wrap:anywhere}@media(max-width:340px){.is-catalog-toolbar{grid-template-columns:1fr;gap:4px}.is-catalog-toolbar .is-small{margin:0}}
+
+.is-card .is-art-note,.is-profile .is-art-note{display:block;color:var(--muted);font-size:10px;line-height:1.35;margin-top:4px;overflow-wrap:anywhere}.is-profile>div{min-width:0}.is-fragment-art{opacity:1}
