@@ -35,9 +35,9 @@ function renderOfficerEquipment({section,mode,state,D,t,e,L,node,row,field,list,
  const refresh=range(fields,1,30,'attrFrom','attrTo',(x,y)=>{result.replaceChildren(node('h3','',attr(v[2])));row(result,w[11],officerAttrQuality(v,L));row(result,w[9],officerEffectText(v[2],v[6][x-1])+' → '+officerEffectText(v[2],v[6][y-1]));row(result,e[9],fmt(v[7][x-1])+' → '+fmt(v[7][y-1]));const cost=officerRangeCost(D.superXP,x,y);row(result,e[14],fmt(cost));officerFortifyItemsView(result,cost,L,t,node,row,fmt);const mw=officerMechanicWords[L]||officerMechanicWords.en;if(v[4]>=3)row(result,mw[16],fmt(officerSelectionCosts[v[4]]));});refresh();
  const mw=officerMechanicWords[L]||officerMechanicWords.en,info=node('details','epBreakdown');info.append(node('summary','',mw[3]));section.append(info);const costs=node('div','epBudget');for(let i=0;i<5;i++)row(costs,mw[4]+' '+i,fmt(officerRemodelCosts[i]));const choose=node('div','epBudget');for(const tag of [3,4,5])row(choose,'S'.repeat(tag-2),fmt(officerSelectionCosts[tag]));info.append(node('h3','',mw[5]),costs,node('h3','',mw[7]),choose,node('p','epSmall',mw[8]),node('p','epSmall',mw[9]),node('p','epSmall',mw[12]),node('p','epSmall',mw[17]));return;
  }
- const owners=[...new Set(E.eq.map(x=>x.owner))];if(!owners.includes(state.eqOwner))state.eqOwner=owners[0];
+ const availableItems=E.eq.filter(x=>mode!==8||x.levels[x.levels.length-1][5]?.length);const owners=[...new Set(availableItems.map(x=>x.owner))];if(!owners.includes(state.eqOwner))state.eqOwner=owners[0];
  field(fields,e[3],owners.map(id=>[id,D.roster.find(r=>r[0]===id)[1]]),state.eqOwner,v=>{state.eqOwner=v;state.eqId=null;state.eqSkill=null;save();render()});
- const items=E.eq.filter(x=>x.owner===state.eqOwner);if(!items.some(x=>x.id===state.eqId))state.eqId=items[0].id;
+ const items=availableItems.filter(x=>x.owner===state.eqOwner);if(!items.some(x=>x.id===state.eqId))state.eqId=items[0].id;
  field(fields,w[3],items.map(x=>[x.id,eqName(x)]),state.eqId,v=>{state.eqId=v;state.eqSkill=null;save();render()});
  const item=items.find(x=>x.id===state.eqId),levels=item.levels,max=levels.length;
  if(mode===7){
