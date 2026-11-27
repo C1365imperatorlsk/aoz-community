@@ -1,0 +1,312 @@
+{
+  "status": "pending_verified_artwork",
+  "description": "Inventory of current in-app entries; not an extracted sprite mapping. No artwork inferred.",
+  "items": [
+    {
+      "group": "sk",
+      "id": 101449730,
+      "name": "Laser Cannon",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082690,
+      "name": "Intercept System",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082691,
+      "name": "Melee Weakness Recognition",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449731,
+      "name": "Tactical Missile",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082702,
+      "name": "Added Firepower",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082693,
+      "name": "Long-Range Weakness Recognition",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449732,
+      "name": "Mechanical Golem",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082697,
+      "name": "Added Armor",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082694,
+      "name": "Mid-Range Weakness Recognition",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449734,
+      "name": "Fortify Laser Energy",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082695,
+      "name": "Fortify Engine",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082698,
+      "name": "Firepower Boost",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449736,
+      "name": "EMP Disruptor Ammo",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449735,
+      "name": "Fortify Disruptor",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082692,
+      "name": "Precise Firepower",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449740,
+      "name": "Laser Disruptor",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449737,
+      "name": "Magnetic Disruptor",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082701,
+      "name": "Energy Aid",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449738,
+      "name": "Ultrapulse Laser",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449739,
+      "name": "High-Speed Charge",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082699,
+      "name": "Fortify Engine Body",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 101449741,
+      "name": "Superior Force Field",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082696,
+      "name": "EMP Armor",
+      "art": null
+    },
+    {
+      "group": "sk",
+      "id": 84082700,
+      "name": "Armor Piercing Laser",
+      "art": null
+    },
+    {
+      "group": "eq",
+      "id": 101580802,
+      "name": "Wingplane I",
+      "art": null
+    },
+    {
+      "group": "eq",
+      "id": 101580803,
+      "name": "Wingplane II",
+      "art": null
+    },
+    {
+      "group": "eq",
+      "id": 101580804,
+      "name": "Machine Head",
+      "art": null
+    },
+    {
+      "group": "eq",
+      "id": 101580805,
+      "name": "Body",
+      "art": null
+    },
+    {
+      "group": "eq",
+      "id": 101580806,
+      "name": "Wing",
+      "art": null
+    },
+    {
+      "group": "eq",
+      "id": 101580807,
+      "name": "Machine Gun",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 101646338,
+      "name": "Kinetic Machine Gun",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148231,
+      "name": "Stable Energizer",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148227,
+      "name": "Storm Energizer",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 101646339,
+      "name": "Thermal Energy Machine Gun",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148228,
+      "name": "Mid-Range Strategic Strike",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148229,
+      "name": "Titan Resistance",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 101646340,
+      "name": "Mechanical Golem Fortification",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148232,
+      "name": "Armor Piercing Laser II",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148226,
+      "name": "Melee Energizer",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 101646341,
+      "name": "Storm Bomb",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148233,
+      "name": "Storm Energizer II",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148230,
+      "name": "Long-Range Strategic Strike",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 101646342,
+      "name": "Storm Disruptor",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148234,
+      "name": "Misfire Resistance",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148235,
+      "name": "Warplane Resistance",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 101646343,
+      "name": "Restructuring Ray",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148236,
+      "name": "Disruptor Resistance",
+      "art": null
+    },
+    {
+      "group": "es",
+      "id": 84148237,
+      "name": "Melee Damage Reduction",
+      "art": null
+    },
+    {
+      "group": "skin",
+      "id": 68616195,
+      "name": "Colorful Shuttle",
+      "art": null
+    },
+    {
+      "group": "skin",
+      "id": 68616196,
+      "name": "Neon Craze",
+      "art": null
+    },
+    {
+      "group": "skin",
+      "id": 68616197,
+      "name": "Flying Saucer",
+      "art": null
+    }
+  ]
+}
