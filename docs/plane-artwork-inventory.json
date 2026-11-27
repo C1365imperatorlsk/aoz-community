@@ -1,312 +1,1181 @@
 {
-  "status": "pending_verified_artwork",
-  "description": "Inventory of current in-app entries; not an extracted sprite mapping. No artwork inferred.",
+  "status": "verified_visuals_with_three_resource_gaps",
   "items": [
     {
-      "group": "sk",
-      "id": 101449730,
-      "name": "Laser Cannon",
-      "art": null
+      "id": "67240456",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        895,
+        169,
+        89,
+        105
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082690,
-      "name": "Intercept System",
-      "art": null
+      "id": "67240457",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        1,
+        384,
+        96,
+        94
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082691,
-      "name": "Melee Weakness Recognition",
-      "art": null
+      "id": "67240458",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        813,
+        169,
+        80,
+        108
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449731,
-      "name": "Tactical Missile",
-      "art": null
+      "id": "67698812",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        1,
+        285,
+        95,
+        97
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082702,
-      "name": "Added Firepower",
-      "art": null
+      "id": "67698866",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        98,
+        285,
+        95,
+        97
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082693,
-      "name": "Long-Range Weakness Recognition",
-      "art": null
+      "id": "67698871",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        195,
+        285,
+        95,
+        97
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449732,
-      "name": "Mechanical Golem",
-      "art": null
+      "id": "68616195",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        1,
+        1,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082697,
-      "name": "Added Armor",
-      "art": null
+      "id": "68616196",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        223,
+        1,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082694,
-      "name": "Mid-Range Weakness Recognition",
-      "art": null
+      "id": "68616197",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        445,
+        1,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449734,
-      "name": "Fortify Laser Energy",
-      "art": null
+      "id": "84082690",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        674,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082695,
-      "name": "Fortify Engine",
-      "art": null
+      "id": "84082691",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        742,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082698,
-      "name": "Firepower Boost",
-      "art": null
+      "id": "84082692",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        810,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449736,
-      "name": "EMP Disruptor Ammo",
-      "art": null
+      "id": "84082693",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        878,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449735,
-      "name": "Fortify Disruptor",
-      "art": null
+      "id": "84082694",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        946,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082692,
-      "name": "Precise Firepower",
-      "art": null
+      "id": "84082695",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        1,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449740,
-      "name": "Laser Disruptor",
-      "art": null
+      "id": "84082696",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        69,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449737,
-      "name": "Magnetic Disruptor",
-      "art": null
+      "id": "84082697",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        137,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082701,
-      "name": "Energy Aid",
-      "art": null
+      "id": "84082698",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        205,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449738,
-      "name": "Ultrapulse Laser",
-      "art": null
+      "id": "84082699",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        273,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449739,
-      "name": "High-Speed Charge",
-      "art": null
+      "id": "84082700",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        341,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082699,
-      "name": "Fortify Engine Body",
-      "art": null
+      "id": "84082701",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        409,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 101449741,
-      "name": "Superior Force Field",
-      "art": null
+      "id": "84082702",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        477,
+        559,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082696,
-      "name": "EMP Armor",
-      "art": null
+      "id": "84148226",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        968,
+        559,
+        53,
+        53
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "sk",
-      "id": 84082700,
-      "name": "Armor Piercing Laser",
-      "art": null
+      "id": "84148227",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        1,
+        627,
+        53,
+        53
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "eq",
-      "id": 101580802,
-      "name": "Wingplane I",
-      "art": null
+      "id": "84148228",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        545,
+        559,
+        65,
+        65
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "eq",
-      "id": 101580803,
-      "name": "Wingplane II",
-      "art": null
+      "id": "84148229",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        855,
+        559,
+        55,
+        54
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "eq",
-      "id": 101580804,
-      "name": "Machine Head",
-      "art": null
+      "id": "84148230",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        612,
+        559,
+        61,
+        61
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "eq",
-      "id": 101580805,
-      "name": "Body",
-      "art": null
+      "id": "84148231",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        912,
+        559,
+        54,
+        54
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "eq",
-      "id": 101580806,
-      "name": "Wing",
-      "art": null
+      "id": "84148232",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        56,
+        627,
+        53,
+        53
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "eq",
-      "id": 101580807,
-      "name": "Machine Gun",
-      "art": null
+      "id": "84148233",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        111,
+        627,
+        57,
+        49
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 101646338,
-      "name": "Kinetic Machine Gun",
-      "art": null
+      "id": "84148234",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        797,
+        559,
+        56,
+        56
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148231,
-      "name": "Stable Energizer",
-      "art": null
+      "id": "84148235",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        170,
+        627,
+        61,
+        47
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148227,
-      "name": "Storm Energizer",
-      "art": null
+      "id": "84148236",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        738,
+        559,
+        57,
+        57
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 101646339,
-      "name": "Thermal Energy Machine Gun",
-      "art": null
+      "id": "84148237",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        675,
+        559,
+        61,
+        57
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148228,
-      "name": "Mid-Range Strategic Strike",
-      "art": null
+      "id": "101449730",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        799,
+        1,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148229,
-      "name": "Titan Resistance",
-      "art": null
+      "id": "101449731",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        1,
+        169,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 101646340,
-      "name": "Mechanical Golem Fortification",
-      "art": null
+      "id": "101449732",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        117,
+        169,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148232,
-      "name": "Armor Piercing Laser II",
-      "art": null
+      "id": "101449734",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        233,
+        169,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148226,
-      "name": "Melee Energizer",
-      "art": null
+      "id": "101449735",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        470,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 101646341,
-      "name": "Storm Bomb",
-      "art": null
+      "id": "101449736",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        349,
+        169,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148233,
-      "name": "Storm Energizer II",
-      "art": null
+      "id": "101449737",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        538,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148230,
-      "name": "Long-Range Strategic Strike",
-      "art": null
+      "id": "101449738",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        465,
+        169,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 101646342,
-      "name": "Storm Disruptor",
-      "art": null
+      "id": "101449739",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        606,
+        480,
+        66,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148234,
-      "name": "Misfire Resistance",
-      "art": null
+      "id": "101449740",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        581,
+        169,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148235,
-      "name": "Warplane Resistance",
-      "art": null
+      "id": "101449741",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        697,
+        169,
+        114,
+        114
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 101646343,
-      "name": "Restructuring Ray",
-      "art": null
+      "id": "101580802",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        292,
+        285,
+        110,
+        94
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148236,
-      "name": "Disruptor Resistance",
-      "art": null
+      "id": "101580803",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        404,
+        285,
+        110,
+        94
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "es",
-      "id": 84148237,
-      "name": "Melee Damage Reduction",
-      "art": null
+      "id": "101580804",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        516,
+        285,
+        110,
+        94
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "skin",
-      "id": 68616195,
-      "name": "Colorful Shuttle",
-      "art": null
+      "id": "101580805",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        628,
+        285,
+        110,
+        94
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "skin",
-      "id": 68616196,
-      "name": "Neon Craze",
-      "art": null
+      "id": "101580806",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        740,
+        285,
+        110,
+        94
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
     },
     {
-      "group": "skin",
-      "id": 68616197,
-      "name": "Flying Saucer",
-      "art": null
+      "id": "101580807",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        852,
+        285,
+        110,
+        94
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "101646338",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        356,
+        480,
+        112,
+        66
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "101646339",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        241,
+        480,
+        113,
+        70
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "101646340",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        215,
+        384,
+        105,
+        86
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "101646341",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        322,
+        384,
+        114,
+        79
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "101646342",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        99,
+        384,
+        114,
+        86
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "101646343",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        438,
+        384,
+        114,
+        78
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "plane",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        667,
+        1,
+        130,
+        130
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_1",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        554,
+        384,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_2",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        634,
+        384,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_3",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        714,
+        384,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_4",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        794,
+        384,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_5",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        874,
+        384,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_6",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        1,
+        480,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_7",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        81,
+        480,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "stage_8",
+      "sheet": "assets/planes/plane-cards.webp",
+      "rect": [
+        161,
+        480,
+        78,
+        77
+      ],
+      "dimensions": [
+        1024,
+        681
+      ]
+    },
+    {
+      "id": "68616195_1",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        1,
+        1,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616195_2",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        223,
+        1,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616195_3",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        445,
+        1,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616196_1",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        667,
+        1,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616196_2",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        1,
+        169,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616196_3",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        223,
+        169,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616197_1",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        445,
+        169,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616197_2",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        667,
+        169,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "68616197_3",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        1,
+        337,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_1",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        223,
+        337,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_2",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        445,
+        337,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_3",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        667,
+        337,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_4",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        1,
+        505,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_5",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        223,
+        505,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_6",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        445,
+        505,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_7",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        667,
+        505,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_8",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        1,
+        673,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
+    },
+    {
+      "id": "base_9",
+      "sheet": "assets/planes/plane-gallery.webp",
+      "rect": [
+        223,
+        673,
+        220,
+        166
+      ],
+      "dimensions": [
+        1024,
+        840
+      ]
     }
   ]
 }
