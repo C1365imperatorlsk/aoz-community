@@ -1,0 +1,29 @@
+name: Prepare current source snapshot
+on:
+  push:
+    branches: [ops/backup-age-bootstrap]
+    paths: ['.github/workflows/prepare-source-snapshot.yml']
+permissions:
+  contents: read
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pinned public source
+        uses: actions/checkout@v4
+        with:
+          ref: 'c6aa36d46e945d1bcab5952f1663ec4f2bab0677'
+          persist-credentials: false
+      - name: Export tracked public source only
+        run: |
+          set -euo pipefail
+          git archive --format=zip --prefix=aoz-community/ --output=/tmp/aoz-source.zip 'c6aa36d46e945d1bcab5952f1663ec4f2bab0677'
+          unzip -tq /tmp/aoz-source.zip
+          sha256sum /tmp/aoz-source.zip
+      - name: Export source archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: aoz-source-0.7.75
+          path: /tmp/aoz-source.zip
+          retention-days: 1
+          if-no-files-found: error
