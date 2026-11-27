@@ -102,6 +102,9 @@ const islandNameRows=`
 402653280|Suprema: reina del invierno|Tối thượng: nữ hoàng mùa đông|الأسمى: ملكة الشتاء|終極－冰雪女王|Vrhovna: zimska kraljica|Suprema: regina dell'inverno
 402653282|Gran noria|Vòng đu quay lớn|العجلة الدوارة الكبرى|巨型摩天輪|Veliki panoramski kotač|Grande ruota panoramica
 402653283|Submarino amarillo|Tàu ngầm vàng|الغواصة الصفراء|黃色潛水艇|Žuta podmornica|Sottomarino giallo
+402653284|Hidroavión|Thủy phi cơ|طائرة مائية|水上飛機|Hidroavion|Idrovolante
+402653285|Vela fantasma|Cánh buồm ma|شراع شبح|幽靈帆船|Sablasno jedro|Vela fantasma
+50397336|Reducción del daño recibido de tropas de alcance medio|Giảm sát thương nhận từ quân tầm trung|تقليل الضرر المتلقى من القوات متوسطة المدى|降低受到中程部隊的傷害|Smanjenje primljene štete od srednjedometnih postrojbi|Riduzione dei danni subiti dalle truppe a medio raggio
 50397205|Velocidad de reclutamiento|Tốc độ tuyển quân|سرعة التجنيد|招募速度|Brzina novačenja|Velocità di reclutamento
 50397212|Capacidad de carga|Tải trọng|سعة الحمولة|負重|Nosivost|Capacità di carico
 50397214|PV de tropas cuerpo a cuerpo|HP quân cận chiến|صحة قوات الاشتباك|近戰部隊生命值|HP bliskih postrojbi|PV truppe da mischia
@@ -143,7 +146,7 @@ const islandNameRows=`
 67240371|Plano del puerto|Bản thiết kế cảng|مخطط الميناء|港口圖紙|Nacrt luke|Progetto del porto
 `;
 for(const row of islandNameRows.trim().split('\n')){const [key,...v]=row.split('|');if(v.length!==islandExtraLanguages.length)throw Error('Island locale name count '+key);for(let i=0;i<v.length;i++)islandExtraNames[islandExtraLanguages[i]][key]=v[i]}
-const fragmentParents={67698793:402653198,67698794:402653199,67698795:402653202,67698796:402653210,67698887:402653276,67698888:402653277,67698891:402653278,67698892:402653279,67698897:402653282,67698898:402653283};
+const fragmentParents={67698793:402653198,67698794:402653199,67698795:402653202,67698796:402653210,67698887:402653276,67698888:402653277,67698891:402653278,67698892:402653279,67698897:402653282,67698898:402653283,67698899:402653284,67698900:402653285};
 for(const [k,id] of Object.entries(fragmentParents)){for(const lang of islandExtraLanguages){const n=islandExtraNames[lang][id];islandExtraNames[lang][k]={es:'Fragmento: '+n,vi:'Mảnh: '+n,ar:'شظية: '+n,zh:n+'碎片',hr:'Ulomak: '+n,it:'Frammento: '+n}[lang]}}
 Object.assign(islandSetNames,{es:['Carnaval navideño','Jardín romántico','Parque infantil','Fiesta de Halloween','Verano refrescante','Ciudad cibernética'],vi:['Lễ hội Giáng sinh','Vườn lãng mạn','Sân chơi trẻ em','Tiệc Halloween','Mùa hè mát mẻ','Thành phố công nghệ'],ar:['كرنفال عيد الميلاد','حديقة رومانسية','ملعب الأطفال','حفلة الهالوين','صيف منعش','المدينة السيبرانية'],zh:['聖誕嘉年華','浪漫花園','兒童樂園','萬聖節派對','清涼夏日','賽博城市'],hr:['Božićni karneval','Romantični vrt','Dječje igralište','Noć vještica','Osvježavajuće ljeto','Kibernetički grad'],it:['Carnevale natalizio','Giardino romantico','Parco giochi','Festa di Halloween','Estate rinfrescante','Città cyber']});
 
