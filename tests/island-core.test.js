@@ -16,3 +16,8 @@ const portIds=Object.keys(D.dock),max=Object.fromEntries(portIds.map(id=>[id,D.d
 
 for(const [id,n,frag,cost,power,luxury,checksum] of [[402653284,60,67698899,7065,93350,3481,4018141839],[402653285,65,67698900,9815,249670,9515,765301506]]){const x=D.deco.find(x=>x.id===id);ok(x.rows.length,n);const v=C.sea(x,-1,n-1);ok(v.cost,{[frag]:cost});ok(v.after.power,power);ok(v.after.luxury,luxury);let h=2166136261;for(const ch of JSON.stringify(x.rows.map(r=>[r.p,r.q,r.c[0].c,r.l,r.e[1],r.e1?.[1]||0,r.e2?.[1]||0])))h=Math.imul(h^ch.charCodeAt(0),16777619)>>>0;ok(h,checksum)}
 console.log(JSON.stringify({finalChecks:checks,errors:0}));
+
+// Verify the complete records, including effect and resource identifiers.
+function canonicalIsland(x){return Array.isArray(x)?x.map(canonicalIsland):x&&typeof x==='object'?Object.fromEntries(Object.keys(x).sort().map(k=>[k,canonicalIsland(x[k])])):x}
+for(const [id,expected] of [[402653284,1578142057],[402653285,2100612126]]){const rows=D.deco.find(x=>x.id===id).rows;let h=2166136261;for(const ch of JSON.stringify(canonicalIsland(rows)))h=Math.imul(h^ch.charCodeAt(0),16777619)>>>0;ok(h,expected)}
+console.log(JSON.stringify({finalChecks:checks,errors:0}));
