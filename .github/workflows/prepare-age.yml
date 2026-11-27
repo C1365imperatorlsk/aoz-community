@@ -1,0 +1,33 @@
+name: Prepare verified age utility
+on:
+  push:
+    branches: [ops/backup-age-bootstrap]
+    paths: ['.github/workflows/prepare-age.yml']
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch official age release and verify SHA-256
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error --retry 3 'https://github.com/FiloSottile/age/releases/download/v1.3.2/age-v1.3.2-linux-amd64.tar.gz' -o age-v1.3.2-linux-amd64.tar.gz
+          echo 'cbe24006683f8eb669266162894b9a522a1af52f2665fbc63a4bb032ed26ac10  age-v1.3.2-linux-amd64.tar.gz' | sha256sum -c -
+          mkdir -p verified
+          tar -xzf age-v1.3.2-linux-amd64.tar.gz -C verified
+          verified/age/age --version
+          verified/age/age-keygen -o /tmp/test-identity 2>/dev/null
+          recipient=$(verified/age/age-keygen -y /tmp/test-identity)
+          printf 'AOZ BACKUP TEST OK\n' > /tmp/test-plaintext
+          verified/age/age -r "$recipient" -o /tmp/test-encrypted /tmp/test-plaintext
+          verified/age/age -d -i /tmp/test-identity /tmp/test-encrypted | cmp /tmp/test-plaintext -
+          rm -f /tmp/test-identity /tmp/test-plaintext /tmp/test-encrypted
+      - name: Export verified public utility only
+        uses: actions/upload-artifact@v4
+        with:
+          name: verified-age-linux-amd64
+          path: age-v1.3.2-linux-amd64.tar.gz
+          retention-days: 7
+          if-no-files-found: error
