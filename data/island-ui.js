@@ -12,7 +12,7 @@ zh:['依名稱或加成搜尋','排序','預設','名稱','最大戰力','最大
 hr:['Traži po nazivu ili bonusu','Sortiraj','Zadano','Naziv','Maks. snaga','Maks. raskoš','Rijetkost','Rezultati'],
 it:['Cerca per nome o bonus','Ordina','Predefinito','Nome','Potenza max','Lusso max','Rarità','Risultati']};
 for(const [l,a] of Object.entries(catalogWords))Object.assign(words[l],Object.fromEntries(['search','sort','sortDefault','sortName','sortPower','sortLuxury','sortRarity','results'].map((k,i)=>[k,a[i]])));
-const D=islandSource1724,C=IslandCore,A=islandArt1724;
+const D=islandSource,C=IslandCore,A=islandArt;
 const ids=new Map([...A.ids.map((id,i)=>[id,{atlas:A,i}]),...(A.extra?.ids||[]).map((id,i)=>[id,{atlas:A.extra,i}])]);
 // An original fragment illustration may depict its parent object. Only use
 // verified exchange relations with artwork already present in the atlas.
