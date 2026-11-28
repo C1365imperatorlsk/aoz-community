@@ -1,16 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
   "permissions": {
-    "defaultMode": "plan",
+    "defaultMode": "dontAsk",
     "allow": [
       "Read",
       "Glob",
-      "Grep"
+      "Grep",
+      "Edit(//tmp/claude-0/**/scratchpad/AOZ_GLOBAL_AUDIT_REPORT.md)"
     ],
     "deny": [
       "Bash",
-      "Write",
-      "Edit",
+      "Edit(/**)",
       "NotebookEdit",
       "WebFetch",
       "WebSearch",
@@ -21,6 +21,8 @@
       "Read(./**/.env.*)",
       "Read(./**/*.pem)",
       "Read(./**/*.key)"
-    ]
+    ],
+    "disableBypassPermissionsMode": "disable",
+    "disableAutoMode": "disable"
   }
 }
