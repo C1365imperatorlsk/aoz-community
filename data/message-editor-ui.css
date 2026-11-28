@@ -1,0 +1,46 @@
+#hubEditor .edHero{border-color:#4a90ae;background:radial-gradient(ellipse at 100% 0,#2484ab24,transparent 75%),linear-gradient(135deg,#1d3549e8,#101d2df2);box-shadow:0 0 18px #4fcaff0b;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+#hubEditor .edHeroIcon{color:#9be3ff;border-color:#4b91ad;background:#213e53}
+#hubEditor .edHero p,#hubEditor .edNote{font-size:.875rem;line-height:1.5}
+#hubEditor button.edSmall,#hubEditor details summary{font-size:.875rem;line-height:1.4;min-height:36px}
+#hubEditor button.edSmall{touch-action:manipulation;transition:background-color .15s,border-color .15s}
+#hubEditor .edxDestination{padding:0;margin:0 0 12px;border:1px solid #4f96b4;background:#112536df;box-shadow:0 0 14px #4fcaff0c}
+#hubEditor .edxDestination>summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 9px;list-style:none;padding:10px 12px;position:relative}
+#hubEditor .edxDestination>summary::-webkit-details-marker{display:none}
+#hubEditor .edxDestLabel{font-size:.8rem;color:#a8c7db;grid-column:1}
+#hubEditor .edxDestination>summary strong{font-size:.95rem;line-height:1.4;min-width:0;overflow-wrap:anywhere;grid-column:1;color:#e4f5ff}
+#hubEditor .edxBadge{grid-column:2;grid-row:1/3;align-self:center;padding:5px 9px;color:#91e1ff;background:#28608355;border:1px solid #4e9bbe;border-radius:9px;font-size:.95rem;font-variant-numeric:tabular-nums}
+#hubEditor .edxDestList{padding:0 10px 10px}
+#hubEditor .edxDestList h4{font-size:.8rem;color:#a4c2d4;margin:7px 0}
+#hubEditor .edxDestChoices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+#hubEditor .edxDestChoices button{display:flex;align-items:center;gap:8px;text-align:start;padding:9px;min-height:44px}
+#hubEditor .edxDestChoices button span{flex:1;min-width:0;overflow-wrap:anywhere}
+#hubEditor .edxDestChoices button strong{flex:none;color:#8dddff;font-variant-numeric:tabular-nums}
+#hubEditor .edxDestChoices button[aria-pressed=true]{border-color:#84dbff;background:#27516a;box-shadow:inset 0 0 0 1px #5bc8f344}
+#hubEditor .edxSpecial{margin-bottom:0}
+#hubEditor #edCount{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;font-size:.875rem}
+#hubEditor .edxStat{display:flex;flex-direction:column;gap:4px;min-width:0;padding:8px;background:#142b3b;border:1px solid #375c73;border-radius:9px}
+#hubEditor .edxStat strong{font-size:.95rem;color:#99e2ff;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+#hubEditor .edBudgetTrack>div{background:#65d4fa}
+#hubEditor .edBudgetTrack[data-budget=near]>div{background:#ffb45f}
+#hubEditor .edBudgetTrack[data-budget=over]>div{background:#ff6b78}
+#hubEditor #edCount[data-budget=near] .edxStat strong{color:#ffc27a}
+#hubEditor #edCount[data-budget=over] .edxStat strong{color:#ff8e98}
+#hubEditor .edxSplitAction{width:100%;border-color:#64badc;background:#214b65;color:#d4f4ff;margin-top:8px}
+#hubEditor .edxPart{padding:10px;margin:10px 0;border:1px solid #407b99;border-radius:11px;background:#13293be8}
+#hubEditor .edxPartHeading{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px;font-size:.875rem;margin-bottom:8px}
+#hubEditor .edxPartHeading span{font-variant-numeric:tabular-nums;color:#9ddbf1}
+#hubEditor .edxPart textarea{min-height:65px;margin:0 0 8px}
+#hubEditor .edxPart button{width:100%;min-height:40px}
+#hubEditor .edxChips{display:flex;flex-wrap:wrap;gap:5px;margin:6px 0 10px}
+#hubEditor .edxChips button{max-width:100%;padding:7px 9px;flex:0 1 auto;min-width:0}
+#hubEditor .edxSymbolsGrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px}
+#hubEditor .edxSymbolCell{display:flex;min-width:0;border:1px solid #3b7089;background:#152d40;border-radius:9px;overflow:hidden}
+#hubEditor .edxSymbolCell button{margin:0;padding:5px 2px;border:0;border-radius:0;min-height:44px;background:transparent;color:#dff5ff;touch-action:manipulation}
+#hubEditor .edxSymbolInsert{flex:1;min-width:0;font-size:1.35rem}
+#hubEditor .edxSymbolFavorite{flex:0 0 26px;width:26px;min-width:26px;font-size:1rem;color:#83d8fb!important;border-inline-start:1px solid #3b708966!important}
+#hubEditor .edxEmpty{grid-column:1/-1}
+#hubEditor .edxParts,#hubEditor .edxPart,#hubEditor .edxDestList{animation:edxAppear .14s ease-out}
+#hubEditor .edWarn{font-size:.875rem;line-height:1.5}
+@keyframes edxAppear{from{opacity:0;transform:translateY(3px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:360px){#hubEditor .edxDestChoices{grid-template-columns:minmax(0,1fr)}#hubEditor .edxStat{padding:6px}#hubEditor .edxStat span{font-size:.8rem}}
+@media(prefers-reduced-motion:reduce){#hubEditor .edxParts,#hubEditor .edxPart,#hubEditor .edxDestList{animation:none}#hubEditor .edBudgetTrack>div,#hubEditor button.edSmall{transition:none}}
