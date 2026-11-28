@@ -1,0 +1,33 @@
+#hubCity .cpPanel{padding:16px}
+#hubCity .cpHero{padding:18px 15px;border:1px solid #486a84;border-radius:14px;background:radial-gradient(ellipse at 90% 0,#267f9e3d,transparent 70%),linear-gradient(145deg,#21364b,#132130);margin-bottom:14px}
+#hubCity .cpBrand{font-size:.8rem;font-weight:750;letter-spacing:.09em;color:#9bd8e8}
+#hubCity h2{margin:6px 0 9px;font-size:1.5rem}
+#hubCity .cpHero p{margin:0;line-height:1.55}
+#hubCity p{overflow-wrap:anywhere}
+#hubCity .cpFields,#hubCity .cpBudget{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#hubCity .cpField{display:flex;flex-direction:column;gap:7px;min-width:0;font-size:.9rem;line-height:1.45}
+#hubCity .cpField select,#hubCity .cpField input{box-sizing:border-box;width:100%;min-width:0;font-size:1rem;margin:0;min-height:44px}
+#hubCity .cpField input{background:#0c1723;color:#e1edf5;border:1px solid #486073;border-radius:9px;padding:10px 12px}
+#hubCity .cpField input::placeholder{color:#aabfce}
+#hubCity select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23b7d4e8' stroke-width='2'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 10px center;background-size:16px;padding-inline-end:32px}
+[dir=rtl] #hubCity select{background-position:left 10px center}
+#hubCity .cpActions{display:flex;flex-wrap:wrap;gap:9px;margin:12px 0}
+#hubCity .cpButton{width:auto;flex:1 1 130px;min-width:0;margin:0;padding:11px 14px;min-height:44px;font-size:.9rem;line-height:1.4;overflow-wrap:anywhere;background:#1b3347;color:#d7eaf5;border:1px solid #486a84}
+#hubCity .cpButton[aria-pressed=true]{border-color:#8fd8ee;background:#264f65;color:#e9f8ff;box-shadow:inset 0 0 0 1px #8fd8ee}
+#hubCity .cpStatus{font-size:.9rem;color:#b5e0c4;margin:10px 0}
+#hubCity .cpHint{font-size:.875rem;line-height:1.55;color:#b9cddd}
+#hubCity .cpNotice{font-size:.9rem;line-height:1.55;padding:11px 12px;border-inline-start:3px solid #79c6e3;background:#1c3344;border-radius:5px}
+#hubCity details{margin:16px 0;padding:13px;border:1px solid #3d5367;border-radius:11px;background:#142231}
+#hubCity summary{font-size:1rem;font-weight:650;cursor:pointer;line-height:1.5}
+#hubCity .cpResult{margin-top:20px}
+#hubCity .cpRange{font-size:1.35rem;font-weight:700;color:#a3dced}
+#hubCity .cpResource{padding:11px;border:1px solid #3d576d;border-radius:11px;background:linear-gradient(150deg,#20374a,#162433);min-width:0}
+#hubCity .cpResource h4{font-size:1rem;line-height:1.4;margin:0 0 12px;overflow-wrap:anywhere}
+#hubCity .cpResource .line{display:flex;align-items:flex-start;flex-wrap:wrap;gap:5px 10px;font-size:.9rem;line-height:1.5}
+#hubCity .cpResource strong{margin-inline-start:auto;overflow-wrap:anywhere;text-align:end}
+#hubCity .cpSequence li{padding:5px 0;line-height:1.5;font-size:.9rem;overflow-wrap:anywhere}
+#hubCity .cpBackupText{box-sizing:border-box;width:100%;min-height:200px;font-family:monospace;font-size:.875rem;background:#0d1925;color:#dcebf5;border:1px solid #597187;border-radius:8px;padding:10px;resize:vertical}
+#hubCity .warn{color:#ffd18e;font-size:.9rem;line-height:1.5}
+#hubCity input[aria-invalid=true]{border-color:#ffd18e}
+@media(max-width:420px){#hubCity .cpBudget{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:350px){#hubCity .cpPanel{padding:11px}#hubCity .cpFields{grid-template-columns:minmax(0,1fr)}}
